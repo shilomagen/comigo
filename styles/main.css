@@ -7,9 +7,6 @@
 
 body {
   margin: 0;
-}
-
-* {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -25,6 +22,7 @@ a:focus {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -33,20 +31,23 @@ h2 {
 }
 
 .general-btn {
-  background-color: #f25b5b;
+  background-color: #E0564F;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 40px;
   border-radius: 25px;
+  font-weight: 200;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
 }
 
 /*Navigation bar rules*/
-.main-nav {
-  float: right;
-}
+/*.main-nav {*/
+  /*float: right;*/
+/*}*/
 
 .main-nav li {
-  display: inline-block;
 }
+
 
 .main-nav > ul > li a:focus,
 .main-nav > ul > li a:hover {
@@ -63,13 +64,25 @@ h2 {
   color: #fff;
 }
 
-.main-nav ul ul {
-  display: none;
+/*.main-nav ul ul {*/
+  /*display: none;*/
+/*}*/
+
+/*.main-nav ul > li:hover > ul,*/
+/*.main-nav ul > li:focus > ul {*/
+  /*display: inline-block;*/
+/*}*/
+
+.main-nav > ul li ul li {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
 }
 
-.main-nav ul > li:hover > ul,
-.main-nav ul > li:focus > ul {
-  display: inline-block;
+.main-nav > ul li ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /*End of navigation bar rules*/
@@ -119,12 +132,14 @@ h2 {
 /*End of site footer rules*/
 .main-section {
   height: 530px;
-  background-image: url('../assets/main-bg/home-brain-image-new-1920x816.png'), url('../assets/main-bg/home-featured-bg.png');
+  background-image: url(../assets/main-bg/home-brain-image-new-1920x816.png), url(../assets/main-bg/home-featured-bg.png);
   -webkit-background-size: contain, cover;
-  background-repeat:no-repeat, repeat;
+  background-repeat: no-repeat, repeat;
   background-size: contain, contain;
   text-align: center;
   padding-top: 120px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .main-section > h2 {
@@ -133,6 +148,59 @@ h2 {
   margin-bottom: 0.7em;
 }
 
+.our-blog {
+  height: 500px;
+}
+
+.our-blog .blog-header {
+  display: inline-block;
+  width: 16.6666667%;
+  background-color: #F14848;
+  height: 100%;
+}
+
+.our-blog .blog-items {
+  display: inline-block;
+  width: 83%;
+  height: 100%;
+}
+
+.our-blog .blog-items > li {
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+}
+
+.our-blog .blog-items a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.our-blog .blog-items a[href*="BLOG1"] {
+  background-image: url(../assets/blog/ibc_post_EI-750x508.png);
+  background-position: 45% 20%;
+}
+
+.our-blog .blog-items a[href*="BLOG2"] {
+  background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
+  background-position: 45% 20%;
+}
+
+.our-blog .blog-items a[href*="BLOG3"] {
+  background-image: url(../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg);
+  background-position: 45% 20%;
+}
+
+.our-blog .blog-items a[href*="BLOG4"] {
+  background-image: url(../assets/blog/post_tv_connect-750x508.jpeg);
+  background-position: 45% 20%;
+}
+
+.our-blog .blog-items a[href*="BLOG5"] {
+  background-image: url(../assets/blog/post_quality-750x508.jpeg);
+  background-position: 45% 20%;
+}
 
 
 
